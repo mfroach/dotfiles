@@ -93,7 +93,7 @@ options 	PCI_IOV			# PCI SR-IOV support
 
 options 	COMPAT_LINUXKPI
 
-# NEED THIS FOR THE FUCKING INTEL GPU YOU DUMBASS
+# Need this for intel chipset GPU support
 device		iic
 
 # Enable support for the kernel PLL to use an external PPS signal,
