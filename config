@@ -1,0 +1,7 @@
+exec xsetbg -default
+exec setxkbmap -option "ctrl:swapcaps"
+exec backlight 35
+exec xrdb /home/mfro/.Xresources
+definekey root c exec urxvt
+set border 4
+set fwcolor #550055

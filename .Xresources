@@ -1,0 +1,61 @@
+! -------------------------------------------------
+! file:     .colours/dark                           
+! author:   jason ryan - http://jasonwryan.com/    
+! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=txt:
+! -------------------------------------------------
+
+*background: #000000
+*foreground: #EEEEEE
+
+!! jwr dark
+!black
+ *color0:  #333333
+ *color8:  #3D3D3D
+!red
+ *color1:  #8C4665
+ *color9:  #BF4D80
+!green
+ *color2:  #287373
+ *color10: #53A6A6
+!yellow
+ *color3:  #7E5D7A
+ *color11: #A270A3
+!blue
+ *color4:  #395573
+ *color12: #477AB3
+!magenta
+ *color5:  #5E468C
+ *color13: #7E62B3
+!cyan
+ *color6:  #31658C
+ *color14: #6096BF
+!white
+ *color7:  #899CA1
+ *color15: #C0C0C0
+
+*.font: xft:IBM Plex Mono:style=Regular:size=12
+*.boldFont: xft:IBM Plex Mono:style=Bold:size=12
+*.italicFont: xft:IBM Plex Mono:style=Italic:size=12
+*.boldItalicFont: xft:IBM Plex Mono:style=Bold Italic:size=12
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+!URxvt.geometry: 92x24
+URxvt.internalBorder: 16
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+!-*- Perl extensions -*-
+URxvt.perl-ext-common: default,selection-to-clipboard,pasta
+URxvt.keysym.M-u:     perl:url-select:select_next
+URxvt.url-launcher:   /usr/bin/firefox
+URxvt.underlineURLs:  True
+URxvt.keysym.Control-Shift-V:     perl:pasta:paste
+! The following configuration will automatically update the CLIPBOARD when the PRIMARY selection changes
+! This is deprecated since Control-Alt-C/V has been implemented since 9.20 
+URxvt.clipboard.autocopy: true
